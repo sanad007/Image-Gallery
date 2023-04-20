@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+    <h1> Image Gallery Design</h1>
+    <div class="parentclass">
+    <div class="full-img" id="fullImgBox">
+        <img src="image1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class=" img-gallery">
+        <img src="image1.jpg" onclick="openFullImg(this.src)" title="Prabhas-Young Rebel Star">
+        <img src="image2.jpg" onclick="openFullImg(this.src)" title="Anushka Shetty-Lady Superstar">
+        <img src="image3.jpg" onclick="openFullImg(this.src)" title="Glass Wall Art Blue Sky and Turquoise Water">
+        <img src="image4.jpg" onclick="openFullImg(this.src)" title="Green Forest">
+        <img src="image5.jpg" onclick="openFullImg(this.src)" title="Priyanka Arul Mohan-Tamil Actress">
+        <img src="image6.jpg" onclick="openFullImg(this.src)" title="WATERCAPES-Arch in chalk with Flurescent Blue Water Running through Poster">
+        <img src="image7.jpg" onclick="openFullImg(this.src)" title="Pink Sakura blossoming" >
+        <img src="image8.jpg" onclick="openFullImg(this.src)" title="Spring Season">
+        <img src="image9.jpg" onclick="openFullImg(this.src)"title="Puppy">
+        <img src="image10.jpg" onclick="openFullImg(this.src)" title="Night Forest landscape with trees and rocks">
+        <img src="image11.jpg" onclick="openFullImg(this.src)"title="Rock Pigeon" >
+        <img src="image12.jpg" onclick="openFullImg(this.src)"title="magestic capture of wild tiger portrait,looking towards the camera" >
+        <img src="image14.jpg" onclick="openFullImg(this.src)" title="Pineapple Fruit With Sunglasses on Sand">
+        <img src="image15.jpg" onclick="openFullImg(this.src)" title="Vinayaka sculpture">
+        <img src="image16.jpg" onclick="openFullImg(this.src)" title="Seascape of Ocean Waves Through Tropical Trees">
+        
+        
+    </div>
+    </div>
+
+    </section>
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+        function openFullImg(pic) {
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+        function closeFullImg() {
+            fullImgBox.style.display = "none";
+        }
+
+    </script>
+    <footer>
+        <p>© are reserved to Parvathi Roshini</p>
+    
+    </footer>
+</body>
+
+</html>
